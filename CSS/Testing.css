@@ -1,0 +1,13 @@
+.book_wrapper{
+    background-image: url(../images/bg1800_1200.png);
+    background-repeat: no-repeat;
+    margin:0 auto;
+    padding-top:50px;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: contain;
+    background-color: white;
+}
+.book_wrapper {
+
+}
