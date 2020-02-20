@@ -19,7 +19,7 @@ $(function () {
                 $bttn_next.show();
                 $bttn_prev.show();
                 $mybook.show().booklet({
-                    name: null,                             // name of the booklet to display in the document title bar
+                    name: 'Choose your own adventure game',                             // name of the booklet to display in the document title bar
                     width: 1276,                            // container width
                     height: 798,                            // container height
                     speed: 1200,                            // speed of the transition between pages
@@ -29,12 +29,12 @@ $(function () {
                     easeIn: 'easeInQuad',                   // easing method for first half of transition
                     easeOut: 'easeOutQuad',                 // easing method for second half of transition
 
-                    closed: true,                           // start with the book "closed", will add empty pages to beginning and end of book
+                    closed: false,                           // start with the book "closed", will add empty pages to beginning and end of book
                     closedFrontTitle: null,                 // used with "closed", "menu" and "pageSelector", determines title of blank starting page
                     closedFrontChapter: null,               // used with "closed", "menu" and "chapterSelector", determines chapter name of blank starting page
                     closedBackTitle: null,                  // used with "closed", "menu" and "pageSelector", determines chapter name of blank ending page
                     closedBackChapter: null,                // used with "closed", "menu" and "chapterSelector", determines chapter name of blank ending page
-                    covers: false,                          // used with  "closed", makes first and last pages into covers, without page numbers (if enabled)
+                    covers: null,                          // used with  "closed", makes first and last pages into covers, without page numbers (if enabled)
 
                     pagePadding: 10,                        // padding for each page wrapper
                     pageNumbers: false,                      // display page numbers on each page
