@@ -8,7 +8,7 @@
 }
 
 .booklet .b-wrap-left{
-    background:#fff url(../images/left_bg_newSize.png) no-repeat top left;
+    background:#fff url(../images/left_bg.v1.png) no-repeat top left;
     -webkit-border-top-left-radius: 10px;
     -webkit-border-bottom-left-radius: 10px;
     -moz-border-radius-topleft:10px;
@@ -20,7 +20,7 @@
 to let the right page look different than the left page
  */
 .booklet .b-wrap-right{
-    background:#efefef url(../images/right_bg_newSize.png) no-repeat top left;
+    background:#efefef url(../images/right_bg.v1.png) no-repeat top left;
     -webkit-border-top-right-radius: 10px;
     -webkit-border-bottom-right-radius: 10px;
     -moz-border-radius-topright: 10px;
@@ -57,10 +57,10 @@ set the book as background
 .book_wrapper{
     margin: 0 auto;
     padding-top: 50px;
-    width: 1440px;
-    height: 960px;
+    width: 1080px;
+    height: 720px;
     position: center;
-    background: transparent url(../images/bg1440_960.png) no-repeat 6px 12px ;
+    background: transparent url(../images/bg.v1.png) no-repeat 3px 22px;
 }
 
 
@@ -79,8 +79,8 @@ set the book as background
 .book_wrapper a.article,
 .book_wrapper a.demo{
     background:tomato;
-    display:block;
-    width:95px;
+    display:compact;
+    width:250px;
     height:41px;
     text-decoration:none;
     outline:none;
@@ -105,8 +105,8 @@ to make sure the pictures will look like a book adding some shaders
 
 .book_wrapper img{
     margin:10px 0px 5px 35px;
-    max-width:550px;
-    max-height: 750px;
+    max-width:490px;
+    max-height: 720px;
     padding:4px;
     border:1px solid #ddd;
     -moz-box-shadow:1px 1px 1px #fff;
@@ -120,30 +120,6 @@ border on right side a little bit darker
     border:1px solid #E6E3C2;
 }
 
-a#next_page_button,
-a#prev_page_button{
-    display:none;
-    position:absolute;
-    width:41px;
-    height:40px;
-    cursor:pointer;
-    margin-top:-20px;
-    top:50%;
-    background:transparent url(../images/buttons.png) no-repeat 0px -40px;
-}
-a#prev_page_button{
-    left:-30px;
-}
-a#next_page_button{
-    right:-30px;
-    background-position:-41px -40px;
-}
-a#next_page_button:hover{
-    background-position:-41px 0px;
-}
-a#prev_page_button:hover{
-    background-position:0px 0px;
-}
 
 
 /**
