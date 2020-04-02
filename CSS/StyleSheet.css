@@ -76,11 +76,11 @@ set the book as background
     font-size:20px;
     margin:15px 15px 15px 15px;
 }
-.book_wrapper a.article,
-.book_wrapper a.demo{
-    background:tomato;
+
+.book_wrapper a.start{
+    background:yellowgreen;
     display:compact;
-    width:250px;
+    width:150px;
     height:41px;
     text-decoration:none;
     outline:none;
@@ -89,6 +89,35 @@ set the book as background
     float:left;
     line-height:41px;
     padding-left:47px;
+}
+
+.book_wrapper a.end{
+    background:yellowgreen;
+    display:compact;
+    width:230px;
+    height:41px;
+    text-decoration:none;
+    outline:none;
+    font-size:24px;
+    color:#555;
+    float:left;
+    line-height:41px;
+    padding-left:47px;
+}
+
+.book_wrapper a.article,
+.book_wrapper a.demo{
+    background:tomato;
+    display:compact;
+    width:90px;
+    height:41px;
+    text-decoration:none;
+    outline:none;
+    font-size:24px;
+    color:#555;
+    float:left;
+    line-height:41px;
+    padding-left:1px;
 }
 .book_wrapper a.demo{
     margin-left:50px;
@@ -144,46 +173,6 @@ for the loading screen
     -webkit-border-radius:20px;
     border-radius:20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 article
 {
