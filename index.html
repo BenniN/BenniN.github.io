@@ -24,13 +24,14 @@
         Cufon.replace('.reference a', {textShadow: '1px 1px #C59471', fontFamily: 'ChunkFive'});
         Cufon.replace('.loading', {textShadow: '1px 1px #000', fontFamily: 'ChunkFive'});
     </script>
+    <script src="JavaScript/Choices.js"></script>
 </head>
 <body>
 
 <div class="book_wrapper">
 
-    <a id="prev_page_button">asdfgsdfg</a>
-    <a id="next_page_button">sdfgsdfgsdfg</a>
+    <a id="prev_page_button"></a>
+    <a id="next_page_button"></a>
 
     <div id="loading" class="loading">Loading pages...</div>
 
@@ -40,30 +41,8 @@
             <div id="firstdiv">
                 <img src="images/triceratops.gif" height="150" width="300"/>
                 <h1>Landing Page </h1>
-                <a href="#" onclick="test1()" class="start">Start Game!</a>
-                <a href="#" onclick="addIntro()" class="start">Start Text</a>
-                <script>
-                    function addPicture() {
-                        var node = document.createElement('img');
-                        node.src="images/landscape.jpg";
-                        node.height =300;
-                        node.width = 400;
-                        document.getElementById("seconddiv").appendChild(node);
+                <a href="#" onclick="addIntro()" class="start">Start Game!</a>
 
-                    }
-                </script>
-                <script >
-                    function addIntro() {
-                        document.getElementById("threediv").innerHTML = '<div type="text/html" data="HTML_Pages/Intro.html"></div>';
-                        document.getElementById("threediv").style.height = "598px";
-                        document.getElementById("threediv").style.width="480px";
-                    }
-                </script>
-                <script>
-                    function test1(){
-                        $("#seconddiv").load("HTML_Pages/Intro.html" + #body);
-                    }
-                </script>
 
             </div>
 
@@ -74,6 +53,7 @@
             <div id="threediv">
 
             </div>
+
             <div id="fourdiv">
 
             </div>
@@ -98,7 +78,7 @@
             <div id="elevendiv">
 
             </div>
-            <div id="twelvdiv">
+            <div id="twelvediv">
 
             </div>
             <div id="thirteendiv">
@@ -107,37 +87,14 @@
             <div id="fourthendiv">
 
             </div>
+            <div id="fifthteendiv">
+
+            </div>
             <div id="sixteendiv">
 
             </div>
             <div id="seventeendiv">
-
             </div>
-
-            <div id="eighteendiv">
-
-            </div>
-
-            <div id="nineteendiv">
-
-            </div>
-            <div id="twentydiv">
-
-            </div>
-            <div id="twentyonediv">
-
-            </div>
-            <div id="twentytwodiv">
-
-            </div>
-            <div id="twentythreediv">
-
-            </div>
-            <div id="twentyfourdiv">
-
-            </div>
-
-
         </div>
     </div>
 </div>

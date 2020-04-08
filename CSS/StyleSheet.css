@@ -105,8 +105,8 @@ set the book as background
     padding-left:47px;
 }
 
-.book_wrapper a.article,
-.book_wrapper a.demo{
+.book_wrapper a.Button_Choice_1,
+.book_wrapper a.Button_Choice_2{
     background:tomato;
     display:compact;
     width:90px;
