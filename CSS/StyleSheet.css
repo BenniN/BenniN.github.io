@@ -29,6 +29,10 @@ to let the right page look different than the left page
     border-bottom-right-radius: 10px;
 }
 
+.firstdiv{
+    background: url(../images/cover.jpg)no-repeat bottom left;
+}
+
 /**
 to
  */
@@ -105,6 +109,8 @@ set the book as background
     padding-left:47px;
 }
 
+
+
 .book_wrapper a.Button_Choice_1,
 .book_wrapper a.Button_Choice_2{
     background:tomato;
@@ -137,10 +143,7 @@ to make sure the pictures will look like a book adding some shaders
     max-width:490px;
     max-height: 720px;
     padding:4px;
-    border:1px solid #ddd;
-    -moz-box-shadow:1px 1px 1px #fff;
-    -webkit-box-shadow:1px 1px 1px #fff;
-    box-shadow:1px 1px 1px #fff;
+
 }
 /**
 border on right side a little bit darker

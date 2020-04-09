@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="CSS/StyleSheet.css">
     <link rel="stylesheet" href="CSS/jquery.booklet.1.1.0.css">
+    <link rel="stylesheet" href="CSS/Buttons.css">
+
 
     <script type="text/javascript" src=""></script>
     <script src="Booklet/jquery-3.4.1.js"></script>
@@ -20,9 +22,9 @@
     <script type="text/javascript">
         Cufon.replace('h1,p,.b-counter');
         Cufon.replace('.book_wrapper a', {hover: true});
-        Cufon.replace('.title', {textShadow: '1px 1px #C59471', fontFamily: 'ChunkFive'});
-        Cufon.replace('.reference a', {textShadow: '1px 1px #C59471', fontFamily: 'ChunkFive'});
-        Cufon.replace('.loading', {textShadow: '1px 1px #000', fontFamily: 'ChunkFive'});
+        Cufon.replace('.title', {textShadow: '1px 1px #C59471'});
+        Cufon.replace('.reference a', {textShadow: '1px 1px #C59471'});
+        Cufon.replace('.loading', {textShadow: '1px 1px #000'});
     </script>
     <script src="JavaScript/Choices.js"></script>
 </head>
@@ -39,9 +41,11 @@
         <div class="b-load">
 
             <div id="firstdiv">
-                <img src="images/triceratops.gif" height="150" width="300"/>
-                <h1>Landing Page </h1>
-                <a href="#" onclick="addIntro()" class="start">Start Game!</a>
+                <img src="images/Welcome.png" height="150" width="375"/>
+                <h1 style="margin-left: 60px" class="Header_one">Build your Own Adventure Game!</h1>
+                <p >After clicking on a Choice you have to press the right arrow button </p>
+
+                <button class="Button_Start_Game"onclick="addIntro()">Start the Game!</button>
 
 
             </div>

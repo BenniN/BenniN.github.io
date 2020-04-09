@@ -14,6 +14,7 @@ function addIntro() {
 
     choice1.addEventListener("click",addChoice1a);
     choice2.addEventListener("click",addChoice2b);
+    nextPage();
 }
 function addChoice1a(){
     let currentdiv =document.getElementById("fivediv");
@@ -52,7 +53,7 @@ choice2.addEventListener("click",addChoice3b);
 function addChoice3a(){
     let currentdiv =document.getElementById("ninediv");
     currentdiv.className="Text_Class";
-    currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/backToTheCabin3aEnd.html" height="350px" width="460px" ></object>';
+    currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/backToTheCabin3aEnd.html" height="400px" width="460px" ></object>';
     let choice1 =document.createElement("button");
     choice1.innerHTML="Try Again!";
     choice1.className ="Button_Choice_1";
@@ -143,7 +144,7 @@ function addChoice6a(){
 function addChoice6b(){
     let currentdiv =document.getElementById("fifthteendiv");
     currentdiv.className="Text_Class";
-    currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/NeckOfBrachiosaurus6bEnd.html" height="350px" width="460px" ></object>';
+    currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/NeckOfBrachiosaurus6bEnd.html" height="400px" width="460px" ></object>';
     let choice1 =document.createElement("button");
     choice1.innerHTML="Start from the beginning!";
     choice1.className ="Button_Choice_1";
@@ -387,7 +388,7 @@ function addChoice6aspecial(){
 function addChoice6bspecial(){
     let currentdiv =document.getElementById("seventeendiv");
     currentdiv.className="Text_Class";
-    currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/NeckOfBrachiosaurus6bEnd.html" height="350px" width="460px" ></object>';
+    currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/NeckOfBrachiosaurus6bEnd.html" height="400px" width="460px" ></object>';
     let choice1 =document.createElement("button");
     choice1.innerHTML="Start from the beginning!";
     choice1.className ="Button_Choice_1";
@@ -545,6 +546,29 @@ function addChoice11bspecial(){
     choice1.className ="Button_Choice_1";
     currentdiv.appendChild(choice1);
     choice1.addEventListener("click",endStory);
+}
+
+function endStory() {
+location.reload(true);
+}
+
+function nextPage(){
+    var keyboardEvent = document.createEvent("KeyboardEvent");
+    var initMethod = typeof keyboardEvent.initKeyboardEvent !== 'undefined' ? "initKeyboardEvent" : "initKeyEvent";
+
+    keyboardEvent[initMethod](
+        "keydown", // event type: keydown, keyup, keypress
+        true,      // bubbles
+        true,      // cancelable
+        window,    // view: should be window
+        false,     // ctrlKey
+        false,     // altKey
+        false,     // shiftKey
+        false,     // metaKey
+        39,        // keyCode: unsigned long - the virtual key code, else 0
+        0          // charCode: unsigned long - the Unicode character associated with the depressed key, else 0
+    );
+    document.dispatchEvent(keyboardEvent);
 }
 
 

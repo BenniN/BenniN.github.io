@@ -34,7 +34,7 @@ $(function () {
                     closedFrontChapter: null,               // used with "closed", "menu" and "chapterSelector", determines chapter name of blank starting page
                     closedBackTitle: null,                  // used with "closed", "menu" and "pageSelector", determines chapter name of blank ending page
                     closedBackChapter: null,                // used with "closed", "menu" and "chapterSelector", determines chapter name of blank ending page
-                    covers: true,                          // used with  "closed", makes first and last pages into covers, without page numbers (if enabled)
+                    covers: null,                          // used with  "closed", makes first and last pages into covers, without page numbers (if enabled)
 
                     pagePadding: 10,                        // padding for each page wrapper
                     pageNumbers: false,                      // display page numbers on each page
