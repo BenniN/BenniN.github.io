@@ -73,7 +73,7 @@ function addChoice3a(){
     document.getElementById("eightdiv").appendChild(node);
     let currentdiv =document.getElementById("ninediv");
     currentdiv.className="Text_Class";
-    currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/backToTheCabin3aEnd.html" height="420px" width="460px" ></object>';
+    currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/backToTheCabin3aEnd.html" height="440px" width="460px" ></object>';
     let choice1 =document.createElement("button");
     choice1.innerHTML="Try Again!";
     choice1.className ="Button_Choice_1";
@@ -148,14 +148,19 @@ function addChoice5a(){
     document.getElementById("twelvediv").appendChild(node);
     let currentdiv =document.getElementById("thirteendiv");
     currentdiv.className="Text_Class";
-    currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/RunAway5aEnd.html" height="350px" width="460px" ></object>';
+    currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/RunAway5aEnd.html" height="370px" width="460px" ></object>';
     let choice1 =document.createElement("button");
-    choice1.innerHTML="Wann Start from the Beginning?";
+    choice1.innerHTML="Start from the Beginning";
     choice1.className ="Button_Choice_1";
     currentdiv.appendChild(choice1);
     choice1.addEventListener("click",endStory);
 }
 function addChoice5b(){
+    var node = document.createElement('img');
+    node.src="images/painting.jpg";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("twelvediv").appendChild(node);
     let currentdiv =document.getElementById("thirteendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/HideInTree5b.html" height="350px" width="460px" ></object>';
@@ -172,6 +177,11 @@ function addChoice5b(){
     choice2.addEventListener("click",addChoice6b);
 }
 function addChoice6a(){
+    var node = document.createElement('img');
+    node.src="images/vulcanoerruption.gif";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("fourteendiv").appendChild(node);
     let currentdiv =document.getElementById("fifthteendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/StayInTheTree6aEnd.html" height="350px" width="460px" ></object>';
@@ -182,6 +192,11 @@ function addChoice6a(){
     choice1.addEventListener("click",endStory);
 }
 function addChoice6b(){
+    var node = document.createElement('img');
+    node.src="images/brachiosaurus.jpg";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("fourteendiv").appendChild(node);
     let currentdiv =document.getElementById("fifthteendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/NeckOfBrachiosaurus6bEnd.html" height="400px" width="460px" ></object>';
@@ -193,6 +208,11 @@ function addChoice6b(){
 }
 
 function addChoice2b(){
+    var node = document.createElement('img');
+    node.src="images/attic.jpg";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("fourdiv").appendChild(node);
     let currentdiv =document.getElementById("fivediv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/StayInsidetheAttic2b.html" height="350px" width="460px" ></object>';
@@ -209,6 +229,12 @@ function addChoice2b(){
     choice2.addEventListener("click",addChoice7b);
 }
 function addChoice7a(){
+
+    var node = document.createElement('img');
+    node.src="images/paintingsecond.jpg";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("sixdiv").appendChild(node);
     let currentdiv =document.getElementById("sevendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/ApproachBrachiosauruses7a.html" height="350px" width="460px" ></object>';
@@ -225,6 +251,11 @@ function addChoice7a(){
     choice2.addEventListener("click",addChoice8b);
 }
 function addChoice8a(){
+    var node = document.createElement('img');
+    node.src="images/river.gif";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("eightdiv").appendChild(node);
     let currentdiv =document.getElementById("ninediv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/Stay8a.html" height="350px" width="460px" ></object>';
@@ -242,6 +273,11 @@ function addChoice8a(){
 }
 
 function addChoice8b(){
+    var node = document.createElement('img');
+    node.src="images/cartonhouse.png";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("eightdiv").appendChild(node);
     let currentdiv =document.getElementById("ninediv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/Leave8bEnd.html" height="350px" width="460px" ></object>';
@@ -253,6 +289,8 @@ function addChoice8b(){
 }
 
 function addChoice7b(){
+    setInterval(moveToRightDino,30);
+    setInterval(moveTricera,50);
     let currentdiv =document.getElementById("sevendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/RunAway7b.html" height="350px" width="460px" ></object>';
@@ -270,6 +308,7 @@ function addChoice7b(){
 }
 
 function addChoice9a(){
+    setInterval(moveTricera2,50);
     let currentdiv =document.getElementById("ninediv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/backToBrachiosaurus9aEnd.html" height="350px" width="460px" ></object>';
@@ -281,6 +320,11 @@ function addChoice9a(){
 }
 
 function addChoice9b(){
+    var node = document.createElement('img');
+    node.src="images/cave.jpg";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("eightdiv").appendChild(node);
     let currentdiv =document.getElementById("ninediv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/HideInGrass9b.html" height="350px" width="460px" ></object>';
@@ -296,7 +340,13 @@ function addChoice9b(){
     choice1.addEventListener("click",addChoice10a);
     choice2.addEventListener("click",addChoice10b);
 }
+
 function addChoice10a(){
+    var node = document.createElement('img');
+    node.src="images/collapse.jpg";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("tendiv").appendChild(node);
     let currentdiv =document.getElementById("elevendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/HideIncave10aEnd.html" height="350px" width="460px" ></object>';
@@ -334,6 +384,11 @@ function addChoice11a(){
     choice1.addEventListener("click",endStory);
 }
 function addChoice11b(){
+    var node = document.createElement('img');
+    node.src="images/cartonhouse.png";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("twelvediv").appendChild(node);
     let currentdiv =document.getElementById("thirteendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/leaveWithbabyDinosuar11bEnd.html" height="350px" width="460px" ></object>';
@@ -346,6 +401,11 @@ function addChoice11b(){
 
 
 function addChoice3bspecial(){
+    var node = document.createElement('img');
+    node.src="images/river.gif";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("tendiv").appendChild(node);
     let currentdiv =document.getElementById("elevendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/followFootprints3b.html" height="350px" width="460px" ></object>';
@@ -362,6 +422,11 @@ function addChoice3bspecial(){
     choice2.addEventListener("click",addChoice4bspecial);
 }
 function addChoice4aspecial(){
+    var node = document.createElement('img');
+    node.src="images/crocodile.jpg";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("twelvediv").appendChild(node);
     let currentdiv =document.getElementById("thirteendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/LianaSwing4aEnd.html" height="350px" width="460px" ></object>';
@@ -373,6 +438,11 @@ function addChoice4aspecial(){
 }
 
 function addChoice4bspecial(){
+    var node = document.createElement('img');
+    node.src="images/raptor.gif";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("twelvediv").appendChild(node);
     let currentdiv =document.getElementById("thirteendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/SwimThroughRiver4b.html" height="350px" width="460px" ></object>';
@@ -390,6 +460,11 @@ function addChoice4bspecial(){
 }
 
 function addChoice5aspecial(){
+    var node = document.createElement('img');
+    node.src="images/vulcanoerruption.gif";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("fourteendiv").appendChild(node);
     let currentdiv =document.getElementById("fifthteendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/RunAway5aEnd.html" height="350px" width="460px" ></object>';
@@ -400,6 +475,11 @@ function addChoice5aspecial(){
     choice1.addEventListener("click",endStory);
 }
 function addChoice5bspecial(){
+    var node = document.createElement('img');
+    node.src="images/painting.jpg";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("fourteendiv").appendChild(node);
     let currentdiv =document.getElementById("fifthteendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/HideInTree5b.html" height="350px" width="460px" ></object>';
@@ -416,6 +496,11 @@ function addChoice5bspecial(){
     choice2.addEventListener("click",addChoice6bspecial);
 }
 function addChoice6aspecial(){
+    var node = document.createElement('img');
+    node.src="images/vulcanoerruption.gif";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("sixteendiv").appendChild(node);
     let currentdiv =document.getElementById("seventeendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/StayInTheTree6aEnd.html" height="350px" width="460px" ></object>';
@@ -426,6 +511,11 @@ function addChoice6aspecial(){
     choice1.addEventListener("click",endStory);
 }
 function addChoice6bspecial(){
+    var node = document.createElement('img');
+    node.src="images/brachiosaurus.jpg";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("sixteendiv").appendChild(node);
     let currentdiv =document.getElementById("seventeendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/NeckOfBrachiosaurus6bEnd.html" height="400px" width="460px" ></object>';
@@ -437,6 +527,11 @@ function addChoice6bspecial(){
 }
 
 function addChoice2bspecial(){
+    var node = document.createElement('img');
+    node.src="images/attic.jpg";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("sixdiv").appendChild(node);
     let currentdiv =document.getElementById("sevendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/StayInsidetheAttic2b.html" height="350px" width="460px" ></object>';
@@ -453,6 +548,11 @@ function addChoice2bspecial(){
     choice2.addEventListener("click",addChoice7bspecial);
 }
 function addChoice7aspecial(){
+    var node = document.createElement('img');
+    node.src="images/paintingsecond.jpg";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("eightdiv").appendChild(node);
     let currentdiv =document.getElementById("ninediv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/ApproachBrachiosauruses7a.html" height="350px" width="460px" ></object>';
@@ -469,6 +569,11 @@ function addChoice7aspecial(){
     choice2.addEventListener("click",addChoice8bspecial);
 }
 function addChoice8aspecial(){
+    var node = document.createElement('img');
+    node.src="images/river.gif";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("tendiv").appendChild(node);
     let currentdiv =document.getElementById("elevendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/Stay8a.html" height="350px" width="460px" ></object>';
@@ -486,6 +591,11 @@ function addChoice8aspecial(){
 }
 
 function addChoice8bspecial(){
+    var node = document.createElement('img');
+    node.src="images/cartonhouse.png";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("tendiv").appendChild(node);
     let currentdiv =document.getElementById("elevendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/Leave8bEnd.html" height="350px" width="460px" ></object>';
@@ -497,6 +607,8 @@ function addChoice8bspecial(){
 }
 
 function addChoice7bspecial(){
+    setInterval(moveToRightDino2,30);
+    setInterval(moveTricera2,50);
     let currentdiv =document.getElementById("ninediv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/RunAway7b.html" height="350px" width="460px" ></object>';
@@ -514,6 +626,7 @@ function addChoice7bspecial(){
 }
 
 function addChoice9aspecial(){
+    setInterval(moveTricera3,50);
     let currentdiv =document.getElementById("elevendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/backToBrachiosaurus9aEnd.html" height="350px" width="460px" ></object>';
@@ -525,6 +638,11 @@ function addChoice9aspecial(){
 }
 
 function addChoice9bspecial(){
+    var node = document.createElement('img');
+    node.src="images/cave.jpg";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("tendiv").appendChild(node);
     let currentdiv =document.getElementById("elevendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/HideInGrass9b.html" height="350px" width="460px" ></object>';
@@ -541,6 +659,11 @@ function addChoice9bspecial(){
     choice2.addEventListener("click",addChoice10bspecial);
 }
 function addChoice10aspecial(){
+    var node = document.createElement('img');
+    node.src="images/collapse.jpg";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("twelvediv").appendChild(node);
     let currentdiv =document.getElementById("thirteendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/HideIncave10aEnd.html" height="350px" width="460px" ></object>';
@@ -578,6 +701,11 @@ function addChoice11aspecial(){
     choice1.addEventListener("click",endStory);
 }
 function addChoice11bspecial(){
+    var node = document.createElement('img');
+    node.src="images/cartonhouse.png";
+    node.height =300;
+    node.width = 375;
+    document.getElementById("fourteendiv").appendChild(node);
     let currentdiv =document.getElementById("fifthteendiv");
     currentdiv.className="Text_Class";
     currentdiv.innerHTML = '<object class="story_text" type="text/html" data="HTML_Pages/leaveWithbabyDinosuar11bEnd.html" height="350px" width="460px" ></object>';
@@ -592,12 +720,76 @@ function endStory() {
 location.reload(true);
 }
 
+var pos_x1 =0;
+var pos_x =0;
+var pos_x2 =0;
+var pos_x3 =0;
+var pos_x4 =0;
+
+function moveToRightDino(){
+    var node = document.createElement('img');
+    node.style.position ="absolute";
+    node.src="images/pteranodon.gif";
+    node.height =100;
+    node.width = 150;
+    node.style.left=pos_x+"px";
+    pos_x = pos_x +1;
+    document.getElementById("sixdiv").appendChild(node);
+}
+function moveTricera() {
+    var node = document.createElement('img');
+    node.style.position ="absolute";
+    node.src="images/triceratops.gif";
+    node.height =150;
+    node.width = 250;
+    node.style.left=pos_x1+"px";
+    node.style.top = "200px";
+    pos_x1 = pos_x1 +1;
+    document.getElementById("sixdiv").appendChild(node);
+}
+function moveToRightDino2(){
+    var node = document.createElement('img');
+    node.style.position ="absolute";
+    node.src="images/pteranodon.gif";
+    node.height =100;
+    node.width = 150;
+    node.style.left=pos_x2+"px";
+    pos_x2 = pos_x2 +1;
+    document.getElementById("eightdiv").appendChild(node);
+}
+function moveTricera2() {
+    var node = document.createElement('img');
+    node.style.position ="absolute";
+    node.src="images/triceratops.gif";
+    node.height =150;
+    node.width = 250;
+    node.style.left=pos_x3+"px";
+    node.style.top = "200px";
+    pos_x3 = pos_x3 +1;
+    document.getElementById("eightdiv").appendChild(node);
+}
+function moveTricera3() {
+    var node = document.createElement('img');
+    node.style.position ="absolute";
+    node.src="images/triceratops.gif";
+    node.height =150;
+    node.width = 250;
+    node.style.left=pos_x4+"px";
+    node.style.top = "200px";
+    pos_x4 = pos_x4 +1;
+    document.getElementById("tendiv").appendChild(node);
+}
+
+
+
+
+
 function nextPage(){
     var keyboardEvent = document.createEvent("KeyboardEvent");
     var initMethod = typeof keyboardEvent.initKeyboardEvent !== 'undefined' ? "initKeyboardEvent" : "initKeyEvent";
 
     keyboardEvent[initMethod](
-        "keydown", // event type: keydown, keyup, keypress
+        "keypress", // event type: keydown, keyup, keypress
         true,      // bubbles
         true,      // cancelable
         window,    // view: should be window
@@ -609,7 +801,20 @@ function nextPage(){
         0          // charCode: unsigned long - the Unicode character associated with the depressed key, else 0
     );
     document.dispatchEvent(keyboardEvent);
-}/*
+}
+function makeKeyPressEvent(keyName, keyCode, charCode){
+    var event = new KeyboardEvent('keypress');
+    Object.defineProperties(event, {
+        charCode: {value: charCode},
+        keyCode: {value: keyCode},
+        keyIdentifier: {value: keyName},
+        which: {value: keyCode}
+    });
+    return event;
+}
+
+
+/*
 //vulcano erruption
 <div class="tenor-gif-embed" data-postid="14780743" data-share-method="host" data-width="100%" data-aspect-ratio="1.930232558139535"><a href="https://tenor.com/view/fortnite-volcano-eruption-fortnite-volcano-fortnite-volcano-volcano-eruption-gif-14780743"></a> from <a href="https://tenor.com/search/fortnitevolcanoeruption-gifs">Fortnitevolcanoeruption GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 //river
