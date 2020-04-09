@@ -467,7 +467,7 @@ function booklet(target, options, id){
 	if(opts.keyboard){
 		//keyboard ctrls
 		$(document).keyup(function(event){
-			if(event.keyCode == 37){self.prev();}
+			if(event.keyCode == 222){self.prev();}
 			else if(event.keyCode == 39){self.next();}
 		});
 	}
